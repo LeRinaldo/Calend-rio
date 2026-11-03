@@ -43,7 +43,7 @@
       <div class="toolbar"><div class="date-nav"><div class="nav-arrows"><button class="small-btn" id="prevDay" aria-label="Dia anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg></button><button class="small-btn" id="nextDay" aria-label="Próximo dia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></button></div><h2 id="dateTitle"></h2><button class="today" id="todayBtn">Hoje</button></div><div class="view-toggle"><button class="on" id="dayView">Dia</button><button id="weekView">Semana</button></div></div>
       <div class="calendar-wrap"><div class="calendar"><div class="cal-head" id="calHead"></div><div class="day-area" id="dayArea"></div></div></div>
     </section>
-    <div class="below"><span><i class="live-dot"></i> Horários exibidos em horário local</span><span>As alterações são salvas neste dispositivo</span></div>
+    <div class="below"><span><i class="live-dot"></i> Horários exibidos em horário local</span><span>Agenda compartilhada e sincronizada</span></div>
   </main>
 </div>
 <div class="toast" id="toast"></div>
@@ -52,7 +52,7 @@
 (()=>{
  const rooms=['12','18','19','22'], colors={12:'',18:'amber',19:'blue',22:'purple'};
  // Configure com a URL do projeto e a chave pública (anon/publishable) do Supabase.
- const SUPABASE_URL='https://SEU-PROJETO.supabase.co', SUPABASE_ANON_KEY='SUA_CHAVE_PUBLICA';
+ const SUPABASE_URL='https://tesibrxjejvcfyegxkra.supabase.co', SUPABASE_ANON_KEY='sb_publishable_E3mGnNHlbD9wSs4xLNXxBw_NatafBPM';
  let supabase=null, bookingChannel=null, bookings=[], selectedDate=new Date(), mode='day', editingId=null;
  const $=id=>document.getElementById(id), pad=n=>String(n).padStart(2,'0'), iso=d=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
  let currentUser=null;
@@ -91,3 +91,4 @@
 </script>
 </body>
 </html>
+
